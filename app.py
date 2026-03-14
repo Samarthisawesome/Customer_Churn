@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import os
+
 if os.path.exists("churn_model.pkl"):
     import subprocess
     subprocess.run(["python", "churn_prediction.py"])
