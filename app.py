@@ -3,9 +3,8 @@ import pandas as pd
 import numpy as np
 import pickle
 if os.path.exists("churn_model.pkl"):
-    # load pkl files (local)
-else:
-    # train model directly inside the app (cloud)
+    import subprocess
+    subprocess.run(["python", "churn_prediction.py"])
 
 # ─────────────────────────────────────────
 # PAGE CONFIGURATION
