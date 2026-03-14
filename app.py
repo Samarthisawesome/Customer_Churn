@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+if os.path.exists("churn_model.pkl"):
+    # load pkl files (local)
+else:
+    # train model directly inside the app (cloud)
 
 # ─────────────────────────────────────────
 # PAGE CONFIGURATION
